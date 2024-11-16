@@ -167,23 +167,23 @@
                     return response.json();
                 })
                 .then(data => {
-                    if (data.low || data.high) {
-                        const title = data.title || "Video"; // Default title if not provided
+                    if (data.status === 'true') {
+                        const title = data.data.title || "Video"; // Default title if not provided
                         messageElement.classList.remove('hidden');
                         messageElement.textContent = `${title}`;
 
-                        if (data.low) {
+                        if (data.data.low) {
                             const lowLink = document.createElement('a');
-                            lowLink.href = data.low;
+                            lowLink.href = data.data.low;
                             lowLink.download = 'video_low.mp4';
                             lowLink.textContent = 'Download Low Quality';
                             lowLink.className = 'download-link';
                             linkContainer.appendChild(lowLink);
                         }
 
-                        if (data.high) {
+                        if (data.data.high) {
                             const highLink = document.createElement('a');
-                            highLink.href = data.high;
+                            highLink.href = data.data.high;
                             highLink.download = 'video_high.mp4';
                             highLink.textContent = 'Download High Quality';
                             highLink.className = 'download-link';
@@ -222,7 +222,8 @@
         }
 
         // Call this function to display the file content
-        fetchGitHubFile();
+        window.onload = fetchGitHubFile; // Ensure it runs once the page is fully loaded.
     </script>
 </body>
+
 </html>
