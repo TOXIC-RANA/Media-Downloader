@@ -38,7 +38,7 @@ app.get('/dl', async (req, res) => {
             return res.status(404).json({ error: 'No media quality options found.' });
         }
 
-        return res.json({ low, high, title }); // Return media data as JSON response
+        return res.json({ developer: "Farhan",devfb:"https://www.facebook.com/Imon.132233?mibextid=ZbWKwL",devwp:"wa.me/+8801318582357",status:"true",data: { title, low, high }, }); // Return media data as JSON response
     } catch (error) {
         console.error('Error fetching media:', error.message || error);
         return res.status(500).json({ error: 'Failed to download media.' });
