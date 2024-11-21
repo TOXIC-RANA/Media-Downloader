@@ -1,5 +1,5 @@
 const express = require('express');
-const nayan = require('imon-media-downloader'); // Ensure the correct package is used
+const nayan = require('rana-media-downloader'); // Ensure the correct package is used
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -39,9 +39,9 @@ app.get('/dl', async (req, res) => {
         }
 
         return res.json({ 
-            developer: "Farhan",
-            devfb: "https://www.facebook.com/Imon.132233?mibextid=ZbWKwL",
-            devwp: "wa.me/+8801318582357",
+            developer: "Rana",
+            devfb: "https://www.facebook.com/rana.is.busy.okay",
+            devwp: "wa.me/+8801752865115",
             status: "true",
             data: { title, low, high },
         }); // Return media data as JSON response
