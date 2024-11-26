@@ -1,5 +1,5 @@
 const express = require('express');
-const nayan = require('rana-media-downloader'); // Ensure the correct package is used
+const nayan = require('rana-all-media-downloader'); // Ensure the correct package is used
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -39,9 +39,9 @@ app.get('/dl', async (req, res) => {
         }
 
         return res.json({ 
-            developer: "Rana",
+            developer: "Mohammad Rana",
             devfb: "https://www.facebook.com/rana.is.busy.okay",
-            devwp: "wa.me/+8801752865115",
+            devwp: "wa.me/+8801988686406",
             status: "true",
             data: { title, low, high },
         }); // Return media data as JSON response
