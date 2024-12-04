@@ -13,6 +13,6 @@
     "@types/node": "^18.0.6",
     "express": "^4.21.1",
     "imon-media-downloader": "^1.0.2",
-    "rana-all-media-downloader": "^1.0.3"
+    "rana-video-downloader": "^0.0.4"
   }
 }
