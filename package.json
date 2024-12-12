@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "express": "^4.21.1",
-    "rana-video-downloader": "^0.0.4",
-    "rana-video-downloader": "^0.0.4"
+    "rana-video-downloader": "^0.0.5",
+    "rana-video-downloader": "^0.0.5"
   }
 }
