@@ -1,5 +1,5 @@
 const express = require('express');
-const nayan = require('imon-video-downloader'); // Ensure the correct package is used
+const nayan = require('rana-video-downloader'); // Ensure the correct package is used
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -39,7 +39,7 @@ app.get('/dl', async (req, res) => {
         }
 
         return res.json({ 
-            developer: "Farhan",
+            developer: "RANA",
             devfb: "https://www.facebook.com/XAICO.RANA",
             devwp: "wa.me/+8801988686406",
             status: "true",
