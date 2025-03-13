@@ -12,6 +12,6 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "express": "^4.21.2",
-    "imon-videos-downloader": "^0.0.4"
+    "rana-videos-downloader": "^0.0.1"
   }
 }
